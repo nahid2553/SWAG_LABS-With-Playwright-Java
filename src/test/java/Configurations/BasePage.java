@@ -1,5 +1,5 @@
 package Configurations;
 
-public class demo1 {
+public class BasePage {
     //
 }
