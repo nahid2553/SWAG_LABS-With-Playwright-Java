@@ -9,6 +9,7 @@ public class Config {
 //    page.navigate(Config.getBaseUrl() + "/login"); //demo for next url
 
     //Browser Configuration
+
     public static final String BROWSER = "chromium";
     public static final boolean HEADLESS = false;
     public static final int BROWSER_TIMEOUT = 30000;
