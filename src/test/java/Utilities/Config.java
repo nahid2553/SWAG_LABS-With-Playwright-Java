@@ -7,7 +7,7 @@ public class Config {
     //Url Configuration
     public static final String BASE_URL = "https://www.saucedemo.com/";
 //    page.navigate(Config.getBaseUrl() + "/login"); //demo for next url
-
+    public static final String INVENTORY_URL = getBaseUrl()+ "/inventory";
     //Browser Configuration
 
     public static final String BROWSER = "chromium";
@@ -25,11 +25,13 @@ public class Config {
 //    public static final String SCREENSHOT_PATH = "screenshots/";
 //    public static final String REPORT_PATH = "test-reports/";
 //    public static final String LOG_PATH = "logs/";
-//
-//    public static final String VALID_USERNAME = "standard_user";
-//    public static final String VALID_PASSWORD = "secret_sauce";
-//    public static final String INVALID_USERNAME = "invalid_user";
-//    public static final String INVALID_PASSWORD = "wrong_password";
+
+// Test Credentials
+    public static final String VALID_USERNAME = "standard_user";
+    public static final String VALID_PASSWORD = "secret_sauce";
+    public static final String INVALID_USERNAME = "locked_out_user";
+    public static final String INVALID_PASSWORD = "wrong_password";
+
 
     public static String getBaseUrl() {
         String envUrl = System.getenv("BASE_URL");
@@ -43,4 +45,5 @@ public class Config {
         }
         return HEADLESS;
     }
+
 }
