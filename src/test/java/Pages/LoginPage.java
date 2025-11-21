@@ -5,10 +5,10 @@ import com.microsoft.playwright.Page;
 
 public class LoginPage extends BasePage {
 
-    private static final String USERNAME_INPUT = "" ;
-    private static final String PASSWORD_INPUT = "" ;
-    private static final String LOGIN_BUTTON = "" ;
-    private static final String ERROR_MESSAGE = "" ;
+    public static final String USERNAME_INPUT = "input[data-test='username']";
+    public static final String PASSWORD_INPUT = "input[data-test='password']";
+    public static final String LOGIN_BUTTON = "input[data-test='login-button']";
+    public static final String ERROR_MESSAGE = "[data-test='error']" ;
 
     public LoginPage(Page page) {
         super(page);
