@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Define log file path -->
+    <property name="LOG_DIR" value="logs"/>
+    <property name="LOG_FILE" value="${LOG_DIR}/test-execution.log"/>
+
+    <!-- Console Appender (for CI/CD and real-time viewing) -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%-5level] [%thread] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- File Appender (for detailed logs) -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_FILE}</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%-5level] [%thread] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root Logger -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <!-- Specific logger for your tests (optional - for more detailed logging) -->
+    <logger name="Test_Cases" level="DEBUG"/>
+    <logger name="Pages" level="DEBUG"/>
+    <logger name="Configurations" level="DEBUG"/>
+</configuration>
