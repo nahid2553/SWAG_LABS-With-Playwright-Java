@@ -31,6 +31,7 @@ public class Config {
     public static final String VALID_PASSWORD = "secret_sauce";
     public static final String INVALID_USERNAME = "locked_out_user";
     public static final String INVALID_PASSWORD = "wrong_password";
+    public static final String LOCKED_USERNAME = "locked_out_user";
 
 
     public static String getBaseUrl() {
