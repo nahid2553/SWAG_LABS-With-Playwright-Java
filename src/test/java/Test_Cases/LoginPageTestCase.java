@@ -53,20 +53,19 @@ public class LoginPageTestCase extends BaseTest {  // Add extends BaseTest
         System.out.println("✓ Arranged: Navigated to login page");
 
         System.out.println("→ Acting: Entering invalid username");
-        loginPage.fill("input[data-test='username']", Config.INVALID_USERNAME);
+        loginPage.fill(LoginPage.USERNAME_INPUT, Config.INVALID_USERNAME);
 
         System.out.println("→ Acting: Entering invalid password");
-        loginPage.fill("input[data-test='password']", Config.INVALID_PASSWORD);
+        loginPage.fill(LoginPage.PASSWORD_INPUT, Config.INVALID_PASSWORD);
 
         System.out.println("→ Acting: Clicking login button");
-        loginPage.click("input[data-test='login-button']");
+        loginPage.click(LoginPage.LOGIN_BUTTON);
         loginPage.waitForPageLoad();
 
         System.out.println("✓ Asserting: Checking if error message is displayed");
-        assertTrue(loginPage.isVisible("[data-test='error']"),
-                "Error message should be displayed for invalid credentials");
+        assertTrue(loginPage.isVisible(LoginPage.ERROR_MESSAGE),"Error message should be displayed for invalid credentials");
 
-        String errorMessage = loginPage.getText("[data-test='error']");
+        String errorMessage = loginPage.getText(LoginPage.ERROR_MESSAGE);
         System.out.println("Error message: " + errorMessage);
         assertNotNull(errorMessage, "Error message should not be null");
 
@@ -80,17 +79,17 @@ public class LoginPageTestCase extends BaseTest {  // Add extends BaseTest
         System.out.println("✓ Arranged: Navigated to login page");
 
         System.out.println("→ Acting: Entering locked out username");
-        loginPage.fill("input[data-test='username']", "locked_out_user");
+        loginPage.fill(LoginPage.USERNAME_INPUT, Config.LOCKED_USERNAME);
 
         System.out.println("→ Acting: Entering password");
-        loginPage.fill("input[data-test='password']", Config.VALID_PASSWORD);
+        loginPage.fill(LoginPage.PASSWORD_INPUT, Config.VALID_PASSWORD);
 
         System.out.println("→ Acting: Clicking login button");
-        loginPage.click("input[data-test='login-button']");
+        loginPage.click(LoginPage.LOGIN_BUTTON);
         loginPage.waitForPageLoad();
 
         System.out.println("✓ Asserting: Checking if error message is displayed");
-        assertTrue(loginPage.isVisible("[data-test='error']"),
+        assertTrue(loginPage.isVisible(LoginPage.LOCKED_USER_ERROR_MESSAGE),
                 "Error message should be displayed for locked out user");
 
         String errorMessage = loginPage.getText("[data-test='error']");
