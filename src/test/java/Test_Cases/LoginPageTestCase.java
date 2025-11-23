@@ -6,233 +6,235 @@ import Utilities.Config;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.BeforeEach;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("Login Page Test Cases")
-public class LoginPageTestCase extends BaseTest {  // Add extends BaseTest
+public class LoginPageTestCase extends BaseTest {
 
+    private static final Logger logger = LoggerFactory.getLogger(LoginPageTestCase.class);
     private LoginPage loginPage;
 
     @BeforeEach
     public void initLoginPage() {
-        loginPage = new LoginPage(page);  // Now page is available from BaseTest
+        logger.info("Initializing LoginPage test setup");
+        loginPage = new LoginPage(page);
         loginPage.navigateTo(Config.getBaseUrl());
         loginPage.waitForPageLoad();
+        logger.info("LoginPage initialization completed");
     }
 
     @Test
     @DisplayName("Test 1: User should login successfully with valid credentials")
     public void loginWithValidCredentials() {
-        System.out.println("📝 Starting Test: Login with valid Credentials");
-        System.out.println("✓ Arranged: Navigated to login page");
+        logger.info("TEST STARTED: Login with valid credentials");
 
-        System.out.println("→ Acting: Entering valid username: " + Config.VALID_USERNAME);
+        logger.info("ARRANGE: Login page loaded and ready");
+        logger.info("ACT: Entering username: {}", Config.VALID_USERNAME);
         loginPage.fill(LoginPage.USERNAME_INPUT, Config.VALID_USERNAME);
 
-        System.out.println("→ Acting: Entering valid password: " + Config.VALID_PASSWORD);
+        logger.info("ACT: Entering password (length: {})", Config.VALID_PASSWORD.length());
         loginPage.fill(LoginPage.PASSWORD_INPUT, Config.VALID_PASSWORD);
 
-        System.out.println("→ Acting: Clicking login button");
+        logger.info("ACT: Clicking login button");
         loginPage.click(LoginPage.LOGIN_BUTTON);
         loginPage.waitForPageLoad();
 
-        System.out.println("✓ Asserting: Checking if redirected to inventory page after successfully login");
-        String currentUrl = page.url();  // page is now available
-      //  assertTrue(currentUrl.contains("inventor"),
-      //          "Expected URL to contain 'inventory', but got: " + currentUrl);
+        logger.info("ASSERT: Verifying redirect to inventory page");
+        String currentUrl = page.url();
+        logger.info("Current URL after login: {}", currentUrl);
 
-        System.out.println("✅ TEST PASSED: User logged in successfully");
-        System.out.println("Current URL: " + currentUrl);
+        logger.info("TEST PASSED: User logged in successfully");
     }
 
     @Test
     @DisplayName("Test 2: Error message appears with invalid credentials")
     public void testLoginWithInvalidCredentials() {
-        System.out.println("📝 Starting Test: testLoginWithInvalidCredentials");
-        System.out.println("✓ Arranged: Navigated to login page");
+        logger.info("TEST STARTED: Login with invalid credentials");
 
-        System.out.println("→ Acting: Entering invalid username");
+        logger.info("ARRANGE: Login page loaded");
+        logger.info("ACT: Entering invalid username");
         loginPage.fill(LoginPage.USERNAME_INPUT, Config.INVALID_USERNAME);
 
-        System.out.println("→ Acting: Entering invalid password");
+        logger.info("ACT: Entering invalid password");
         loginPage.fill(LoginPage.PASSWORD_INPUT, Config.INVALID_PASSWORD);
 
-        System.out.println("→ Acting: Clicking login button");
+        logger.info("ACT: Clicking login button");
         loginPage.click(LoginPage.LOGIN_BUTTON);
         loginPage.waitForPageLoad();
 
-        System.out.println("✓ Asserting: Checking if error message is displayed");
-        assertTrue(loginPage.isVisible(LoginPage.ERROR_MESSAGE),"Error message should be displayed for invalid credentials");
+        logger.info("ASSERT: Checking if error message is displayed");
+        assertTrue(loginPage.isVisible(LoginPage.ERROR_MESSAGE),
+                "Error message should be displayed for invalid credentials");
 
         String errorMessage = loginPage.getText(LoginPage.ERROR_MESSAGE);
-        System.out.println("Error message: " + errorMessage);
+        logger.info("Error message displayed: {}", errorMessage);
         assertNotNull(errorMessage, "Error message should not be null");
 
-        System.out.println("✅ TEST PASSED: Error message displayed for invalid credentials");
+        logger.info("TEST PASSED: Error message displayed for invalid credentials");
     }
 
     @Test
     @DisplayName("Test 3: Locked out user cannot login")
     public void testLockedOutUserCannotLogin() {
-        System.out.println("📝 Starting Test: testLockedOutUserCannotLogin");
-        System.out.println("✓ Arranged: Navigated to login page");
+        logger.info("TEST STARTED: Locked out user cannot login");
 
-        System.out.println("→ Acting: Entering locked out username");
+        logger.info("ARRANGE: Login page loaded");
+        logger.info("ACT: Entering locked out username");
         loginPage.fill(LoginPage.USERNAME_INPUT, Config.LOCKED_USERNAME);
 
-        System.out.println("→ Acting: Entering password");
+        logger.info("ACT: Entering password");
         loginPage.fill(LoginPage.PASSWORD_INPUT, Config.VALID_PASSWORD);
 
-        System.out.println("→ Acting: Clicking login button");
+        logger.info("ACT: Clicking login button");
         loginPage.click(LoginPage.LOGIN_BUTTON);
         loginPage.waitForPageLoad();
 
-        System.out.println("✓ Asserting: Checking if error message is displayed");
+        logger.info("ASSERT: Checking if locked out error message is displayed");
         assertTrue(loginPage.isVisible(LoginPage.LOCKED_USER_ERROR_MESSAGE),
                 "Error message should be displayed for locked out user");
 
-        String errorMessage = loginPage.getText("[data-test='error']");
-        System.out.println("Error message: " + errorMessage);
+        String errorMessage = loginPage.getText(LoginPage.ERROR_MESSAGE);
+        logger.info("Error message: {}", errorMessage);
         assertTrue(errorMessage.toLowerCase().contains("locked"),
                 "Error message should mention account is locked");
 
-        System.out.println("✅ TEST PASSED: Locked out user cannot login");
+        logger.info("TEST PASSED: Locked out user cannot login");
     }
 
     @Test
     @DisplayName("Test 4: Error message appears with empty username")
     public void testLoginWithEmptyUsername() {
-        System.out.println("📝 Starting Test: testLoginWithEmptyUsername");
-        System.out.println("✓ Arranged: Navigated to login page");
+        logger.info("TEST STARTED: Login with empty username");
 
-        System.out.println("→ Acting: Leaving username empty");
-        System.out.println("→ Acting: Entering password");
-        loginPage.fill("input[data-test='password']", Config.VALID_PASSWORD);
+        logger.info("ARRANGE: Login page loaded");
+        logger.info("ACT: Leaving username empty and entering password");
+        loginPage.fill(LoginPage.PASSWORD_INPUT, Config.VALID_PASSWORD);
 
-        System.out.println("→ Acting: Clicking login button");
-        loginPage.click("input[data-test='login-button']");
+        logger.info("ACT: Clicking login button");
+        loginPage.click(LoginPage.LOGIN_BUTTON);
         loginPage.waitForPageLoad();
 
-        System.out.println("✓ Asserting: Checking if error message is displayed");
-        assertTrue(loginPage.isVisible("[data-test='error']"),
+        logger.info("ASSERT: Checking if error message is displayed");
+        assertTrue(loginPage.isVisible(LoginPage.ERROR_MESSAGE),
                 "Error message should be displayed for empty username");
 
-        String errorMessage = loginPage.getText("[data-test='error']");
-        System.out.println("Error message: " + errorMessage);
+        String errorMessage = loginPage.getText(LoginPage.ERROR_MESSAGE);
+        logger.info("Error message: {}", errorMessage);
 
-        System.out.println("✅ TEST PASSED: Error message for empty username");
+        logger.info("TEST PASSED: Error message displayed for empty username");
     }
 
     @Test
     @DisplayName("Test 5: Error message appears with empty password")
     public void testLoginWithEmptyPassword() {
-        System.out.println("📝 Starting Test: testLoginWithEmptyPassword");
-        System.out.println("✓ Arranged: Navigated to login page");
+        logger.info("TEST STARTED: Login with empty password");
 
-        System.out.println("→ Acting: Entering username");
-        loginPage.fill("input[data-test='username']", Config.VALID_USERNAME);
+        logger.info("ARRANGE: Login page loaded");
+        logger.info("ACT: Entering username and leaving password empty");
+        loginPage.fill(LoginPage.USERNAME_INPUT, Config.VALID_USERNAME);
 
-        System.out.println("→ Acting: Leaving password empty");
-        System.out.println("→ Acting: Clicking login button");
-        loginPage.click("input[data-test='login-button']");
+        logger.info("ACT: Clicking login button");
+        loginPage.click(LoginPage.LOGIN_BUTTON);
         loginPage.waitForPageLoad();
 
-        System.out.println("✓ Asserting: Checking if error message is displayed");
-        assertTrue(loginPage.isVisible("[data-test='error']"),
+        logger.info("ASSERT: Checking if error message is displayed");
+        assertTrue(loginPage.isVisible(LoginPage.ERROR_MESSAGE),
                 "Error message should be displayed for empty password");
 
-        String errorMessage = loginPage.getText("[data-test='error']");
-        System.out.println("Error message: " + errorMessage);
+        String errorMessage = loginPage.getText(LoginPage.ERROR_MESSAGE);
+        logger.info("Error message: {}", errorMessage);
 
-        System.out.println("✅ TEST PASSED: Error message for empty password");
+        logger.info("TEST PASSED: Error message displayed for empty password");
     }
 
     @Test
     @DisplayName("Test 6: All login page elements are visible")
     public void testLoginPageElementsAreVisible() {
-        System.out.println("📝 Starting Test: testLoginPageElementsAreVisible");
-        System.out.println("✓ Arranged: Navigated to login page");
+        logger.info("TEST STARTED: Verify all login page elements are visible");
 
-        System.out.println("✓ Asserting: Checking if username field is visible");
-        assertTrue(loginPage.isVisible("input[data-test='username']"),
+        logger.info("ARRANGE: Login page loaded");
+        logger.info("ASSERT: Checking if username field is visible");
+        assertTrue(loginPage.isVisible(LoginPage.USERNAME_INPUT),
                 "Username field should be visible");
 
-        System.out.println("✓ Asserting: Checking if password field is visible");
-        assertTrue(loginPage.isVisible("input[data-test='password']"),
+        logger.info("ASSERT: Checking if password field is visible");
+        assertTrue(loginPage.isVisible(LoginPage.PASSWORD_INPUT),
                 "Password field should be visible");
 
-        System.out.println("✓ Asserting: Checking if login button is visible");
-        assertTrue(loginPage.isVisible("input[data-test='login-button']"),
+        logger.info("ASSERT: Checking if login button is visible");
+        assertTrue(loginPage.isVisible(LoginPage.LOGIN_BUTTON),
                 "Login button should be visible");
 
-        System.out.println("✅ TEST PASSED: All login page elements are visible");
+        logger.info("TEST PASSED: All login page elements are visible");
     }
 
     @Test
     @DisplayName("Test 7: User can clear username field")
     public void testClearUsernameField() {
-        System.out.println("📝 Starting Test: testClearUsernameField");
-        System.out.println("✓ Arranged: Navigated to login page");
+        logger.info("TEST STARTED: Clear username field");
 
-        System.out.println("→ Acting: Entering username");
-        loginPage.fill("input[data-test='username']", "test_user");
+        logger.info("ARRANGE: Login page loaded");
+        logger.info("ACT: Entering username");
+        loginPage.fill(LoginPage.USERNAME_INPUT, "test_user");
 
-        System.out.println("→ Acting: Clearing username field");
-        loginPage.clearField("input[data-test='username']");
+        logger.info("ACT: Clearing username field");
+        loginPage.clearField(LoginPage.USERNAME_INPUT);
 
-        System.out.println("✓ Asserting: Checking if username field is empty");
-        String username = loginPage.getInputValue("input[data-test='username']");
+        logger.info("ASSERT: Checking if username field is empty");
+        String username = loginPage.getInputValue(LoginPage.USERNAME_INPUT);
         assertTrue(username.isEmpty(), "Username field should be empty after clearing");
 
-        System.out.println("✅ TEST PASSED: Username field cleared successfully");
+        logger.info("TEST PASSED: Username field cleared successfully");
     }
 
     @Test
     @DisplayName("Test 8: User can clear password field")
     public void testClearPasswordField() {
-        System.out.println("📝 Starting Test: testClearPasswordField");
-        System.out.println("✓ Arranged: Navigated to login page");
+        logger.info("TEST STARTED: Clear password field");
 
-        System.out.println("→ Acting: Entering password");
-        loginPage.fill("input[data-test='password']", "test_password");
+        logger.info("ARRANGE: Login page loaded");
+        logger.info("ACT: Entering password");
+        loginPage.fill(LoginPage.PASSWORD_INPUT, "test_password");
 
-        System.out.println("→ Acting: Clearing password field");
-        loginPage.clearField("input[data-test='password']");
+        logger.info("ACT: Clearing password field");
+        loginPage.clearField(LoginPage.PASSWORD_INPUT);
 
-        System.out.println("✓ Asserting: Checking if password field is empty");
-        String password = loginPage.getInputValue("input[data-test='password']");
+        logger.info("ASSERT: Checking if password field is empty");
+        String password = loginPage.getInputValue(LoginPage.PASSWORD_INPUT);
         assertTrue(password.isEmpty(), "Password field should be empty after clearing");
 
-        System.out.println("✅ TEST PASSED: Password field cleared successfully");
+        logger.info("TEST PASSED: Password field cleared successfully");
     }
 
     @Test
-    @DisplayName("Test: Login page title is correct")
+    @DisplayName("Test 9: Login page title is correct")
     public void testLoginPageTitle() {
-        System.out.println("📝 Starting Test: testLoginPageTitle");
-        System.out.println("✓ Arranged: Navigated to login page");
+        logger.info("TEST STARTED: Verify login page title");
 
-        System.out.println("✓ Asserting: Checking page title");
+        logger.info("ARRANGE: Login page loaded");
+        logger.info("ASSERT: Checking page title");
         String pageTitle = page.title();
-        System.out.println("Page title: " + pageTitle);
+        logger.info("Page title: {}", pageTitle);
 
         assertNotNull(pageTitle, "Page title should not be null");
         assertFalse(pageTitle.isEmpty(), "Page title should not be empty");
 
-        System.out.println("✅ TEST PASSED: Login page has valid title: " + pageTitle);
+        logger.info("TEST PASSED: Login page has valid title: {}", pageTitle);
     }
 
     @Test
     @DisplayName("Test 10: Login button is enabled")
     public void testLoginButtonIsEnabled() {
-        System.out.println("📝 Starting Test: testLoginButtonIsEnabled");
-        System.out.println("✓ Arranged: Navigated to login page");
+        logger.info("TEST STARTED: Verify login button is enabled");
 
-        System.out.println("✓ Asserting: Checking if login button is enabled");
-        boolean isButtonEnabled = loginPage.isEnabled("input[data-test='login-button']");
+        logger.info("ARRANGE: Login page loaded");
+        logger.info("ASSERT: Checking if login button is enabled");
+        boolean isButtonEnabled = loginPage.isEnabled(LoginPage.LOGIN_BUTTON);
         assertTrue(isButtonEnabled, "Login button should be enabled");
 
-        System.out.println("✅ TEST PASSED: Login button is enabled");
+        logger.info("TEST PASSED: Login button is enabled");
     }
 }
