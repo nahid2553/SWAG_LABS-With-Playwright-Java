@@ -1,6 +1,6 @@
-package Configurations;
+package configurations;
 
-import Utilities.Config;
+import utilities.Config;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.PlaywrightException;
 import org.slf4j.Logger;

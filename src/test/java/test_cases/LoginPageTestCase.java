@@ -1,8 +1,8 @@
-package Test_Cases;
+package test_cases;
 
-import Configurations.BaseTest;
-import Pages.LoginPage;
-import Utilities.Config;
+import configurations.BaseTest;
+import pages.LoginPage;
+import utilities.Config;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.BeforeEach;

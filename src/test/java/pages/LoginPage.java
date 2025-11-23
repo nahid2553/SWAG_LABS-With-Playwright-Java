@@ -1,6 +1,6 @@
-package Pages;
+package pages;
 
-import Configurations.BasePage;
+import configurations.BasePage;
 import com.microsoft.playwright.Page;
 
 public class LoginPage extends BasePage {

@@ -1,375 +1,375 @@
-00:55:41.017 [INFO ] [main] Configurations.BaseTest - ========================================
-00:55:41.024 [INFO ] [main] Configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
-00:55:41.026 [INFO ] [main] Configurations.BaseTest - ========================================
-00:55:55.688 [INFO ] [main] Configurations.BaseTest - Launching Chromium browser
-00:55:58.474 [INFO ] [main] Configurations.BaseTest - Browser initialized successfully
-00:55:58.474 [INFO ] [main] Configurations.BaseTest - ========================================
-00:55:58.482 [INFO ] [main] Test_Cases.LoginPageTestCase - Initializing LoginPage test setup
-00:55:58.486 [INFO ] [main] Configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
-00:55:59.546 [INFO ] [main] Configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
-00:55:59.548 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:55:59.550 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:55:59.550 [INFO ] [main] Test_Cases.LoginPageTestCase - LoginPage initialization completed
-00:55:59.554 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST STARTED: Clear password field
-00:55:59.554 [INFO ] [main] Test_Cases.LoginPageTestCase - ARRANGE: Login page loaded
-00:55:59.554 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Entering password
-00:55:59.554 [INFO ] [main] Configurations.BasePage - Filling element: input[data-test='password'] with text (length: 13)
-00:55:59.554 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='password']
-00:55:59.621 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='password']
-00:55:59.653 [DEBUG] [main] Configurations.BasePage - Element filled successfully: input[data-test='password']
-00:55:59.653 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Clearing password field
-00:55:59.653 [INFO ] [main] Configurations.BasePage - Clearing field: input[data-test='password']
-00:55:59.655 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='password']
-00:55:59.665 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='password']
-00:55:59.684 [INFO ] [main] Configurations.BasePage - Field cleared successfully: input[data-test='password']
-00:55:59.684 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Checking if password field is empty
-00:55:59.684 [DEBUG] [main] Configurations.BasePage - Getting input value from: input[data-test='password']
-00:55:59.684 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='password']
-00:55:59.694 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='password']
-00:55:59.700 [DEBUG] [main] Configurations.BasePage - Retrieved input value from: input[data-test='password'] -> ''
-00:55:59.709 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST PASSED: Password field cleared successfully
-00:55:59.716 [INFO ] [main] Configurations.BaseTest - ========================================
-00:55:59.716 [INFO ] [main] Configurations.BaseTest - Starting test teardown...
-00:55:59.729 [DEBUG] [main] Configurations.BaseTest - Page closed
-00:55:59.790 [DEBUG] [main] Configurations.BaseTest - Context closed
-00:56:01.137 [DEBUG] [main] Configurations.BaseTest - Browser closed
-00:56:01.163 [DEBUG] [main] Configurations.BaseTest - Playwright closed
-00:56:01.163 [INFO ] [main] Configurations.BaseTest - Teardown completed successfully
-00:56:01.163 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:01.174 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:01.176 [INFO ] [main] Configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
-00:56:01.176 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:02.092 [INFO ] [main] Configurations.BaseTest - Launching Chromium browser
-00:56:02.980 [INFO ] [main] Configurations.BaseTest - Browser initialized successfully
-00:56:02.982 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:02.982 [INFO ] [main] Test_Cases.LoginPageTestCase - Initializing LoginPage test setup
-00:56:02.982 [INFO ] [main] Configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
-00:56:04.195 [INFO ] [main] Configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
-00:56:04.195 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:04.196 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:04.196 [INFO ] [main] Test_Cases.LoginPageTestCase - LoginPage initialization completed
-00:56:04.197 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST STARTED: Verify all login page elements are visible
-00:56:04.197 [INFO ] [main] Test_Cases.LoginPageTestCase - ARRANGE: Login page loaded
-00:56:04.197 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Checking if username field is visible
-00:56:04.265 [DEBUG] [main] Configurations.BasePage - Element visibility check: input[data-test='username'] -> true
-00:56:04.265 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Checking if password field is visible
-00:56:04.276 [DEBUG] [main] Configurations.BasePage - Element visibility check: input[data-test='password'] -> true
-00:56:04.277 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Checking if login button is visible
-00:56:04.282 [DEBUG] [main] Configurations.BasePage - Element visibility check: input[data-test='login-button'] -> true
-00:56:04.282 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST PASSED: All login page elements are visible
-00:56:04.283 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:04.283 [INFO ] [main] Configurations.BaseTest - Starting test teardown...
-00:56:04.295 [DEBUG] [main] Configurations.BaseTest - Page closed
-00:56:04.362 [DEBUG] [main] Configurations.BaseTest - Context closed
-00:56:05.309 [DEBUG] [main] Configurations.BaseTest - Browser closed
-00:56:05.356 [DEBUG] [main] Configurations.BaseTest - Playwright closed
-00:56:05.356 [INFO ] [main] Configurations.BaseTest - Teardown completed successfully
-00:56:05.356 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:05.360 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:05.360 [INFO ] [main] Configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
-00:56:05.360 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:06.405 [INFO ] [main] Configurations.BaseTest - Launching Chromium browser
-00:56:07.380 [INFO ] [main] Configurations.BaseTest - Browser initialized successfully
-00:56:07.382 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:07.382 [INFO ] [main] Test_Cases.LoginPageTestCase - Initializing LoginPage test setup
-00:56:07.382 [INFO ] [main] Configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
-00:56:08.705 [INFO ] [main] Configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
-00:56:08.705 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:08.705 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:08.705 [INFO ] [main] Test_Cases.LoginPageTestCase - LoginPage initialization completed
-00:56:08.707 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST STARTED: Locked out user cannot login
-00:56:08.708 [INFO ] [main] Test_Cases.LoginPageTestCase - ARRANGE: Login page loaded
-00:56:08.708 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Entering locked out username
-00:56:08.708 [INFO ] [main] Configurations.BasePage - Filling element: input[data-test='username'] with text (length: 15)
-00:56:08.708 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='username']
-00:56:08.781 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='username']
-00:56:08.820 [DEBUG] [main] Configurations.BasePage - Element filled successfully: input[data-test='username']
-00:56:08.822 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Entering password
-00:56:08.822 [INFO ] [main] Configurations.BasePage - Filling element: input[data-test='password'] with text (length: 12)
-00:56:08.822 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='password']
-00:56:08.838 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='password']
-00:56:08.854 [DEBUG] [main] Configurations.BasePage - Element filled successfully: input[data-test='password']
-00:56:08.854 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Clicking login button
-00:56:08.854 [INFO ] [main] Configurations.BasePage - Clicking element: input[data-test='login-button']
-00:56:08.854 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='login-button']
-00:56:08.860 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='login-button']
-00:56:08.976 [INFO ] [main] Configurations.BasePage - Element clicked successfully: input[data-test='login-button']
-00:56:08.977 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:08.979 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:08.982 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Checking if locked out error message is displayed
-00:56:08.988 [DEBUG] [main] Configurations.BasePage - Element visibility check: [data-test='error-button'] -> true
-00:56:08.988 [DEBUG] [main] Configurations.BasePage - Getting text from element: [data-test='error']
-00:56:08.988 [DEBUG] [main] Configurations.BasePage - Waiting for element: [data-test='error']
-00:56:09.004 [DEBUG] [main] Configurations.BasePage - Element found: [data-test='error']
-00:56:09.018 [INFO ] [main] Configurations.BasePage - Retrieved text from element: [data-test='error'] -> 'Epic sadface: Sorry, this user has been locked out.'
-00:56:09.018 [INFO ] [main] Test_Cases.LoginPageTestCase - Error message: Epic sadface: Sorry, this user has been locked out.
-00:56:09.018 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST PASSED: Locked out user cannot login
-00:56:09.019 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:09.019 [INFO ] [main] Configurations.BaseTest - Starting test teardown...
-00:56:09.031 [DEBUG] [main] Configurations.BaseTest - Page closed
-00:56:09.122 [DEBUG] [main] Configurations.BaseTest - Context closed
-00:56:10.212 [DEBUG] [main] Configurations.BaseTest - Browser closed
-00:56:10.260 [DEBUG] [main] Configurations.BaseTest - Playwright closed
-00:56:10.260 [INFO ] [main] Configurations.BaseTest - Teardown completed successfully
-00:56:10.262 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:10.275 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:10.275 [INFO ] [main] Configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
-00:56:10.275 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:11.176 [INFO ] [main] Configurations.BaseTest - Launching Chromium browser
-00:56:11.970 [INFO ] [main] Configurations.BaseTest - Browser initialized successfully
-00:56:11.970 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:11.970 [INFO ] [main] Test_Cases.LoginPageTestCase - Initializing LoginPage test setup
-00:56:11.970 [INFO ] [main] Configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
-00:56:13.336 [INFO ] [main] Configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
-00:56:13.336 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:13.336 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:13.336 [INFO ] [main] Test_Cases.LoginPageTestCase - LoginPage initialization completed
-00:56:13.338 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST STARTED: Clear username field
-00:56:13.338 [INFO ] [main] Test_Cases.LoginPageTestCase - ARRANGE: Login page loaded
-00:56:13.340 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Entering username
-00:56:13.341 [INFO ] [main] Configurations.BasePage - Filling element: input[data-test='username'] with text (length: 9)
-00:56:13.341 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='username']
-00:56:13.425 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='username']
-00:56:13.468 [DEBUG] [main] Configurations.BasePage - Element filled successfully: input[data-test='username']
-00:56:13.468 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Clearing username field
-00:56:13.470 [INFO ] [main] Configurations.BasePage - Clearing field: input[data-test='username']
-00:56:13.471 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='username']
-00:56:13.486 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='username']
-00:56:13.503 [INFO ] [main] Configurations.BasePage - Field cleared successfully: input[data-test='username']
-00:56:13.503 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Checking if username field is empty
-00:56:13.503 [DEBUG] [main] Configurations.BasePage - Getting input value from: input[data-test='username']
-00:56:13.503 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='username']
-00:56:13.516 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='username']
-00:56:13.525 [DEBUG] [main] Configurations.BasePage - Retrieved input value from: input[data-test='username'] -> ''
-00:56:13.526 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST PASSED: Username field cleared successfully
-00:56:13.526 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:13.526 [INFO ] [main] Configurations.BaseTest - Starting test teardown...
-00:56:13.537 [DEBUG] [main] Configurations.BaseTest - Page closed
-00:56:13.615 [DEBUG] [main] Configurations.BaseTest - Context closed
-00:56:14.653 [DEBUG] [main] Configurations.BaseTest - Browser closed
-00:56:14.688 [DEBUG] [main] Configurations.BaseTest - Playwright closed
-00:56:14.688 [INFO ] [main] Configurations.BaseTest - Teardown completed successfully
-00:56:14.688 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:14.700 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:14.700 [INFO ] [main] Configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
-00:56:14.700 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:15.639 [INFO ] [main] Configurations.BaseTest - Launching Chromium browser
-00:56:16.469 [INFO ] [main] Configurations.BaseTest - Browser initialized successfully
-00:56:16.471 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:16.471 [INFO ] [main] Test_Cases.LoginPageTestCase - Initializing LoginPage test setup
-00:56:16.471 [INFO ] [main] Configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
-00:56:17.500 [INFO ] [main] Configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
-00:56:17.502 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:17.502 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:17.502 [INFO ] [main] Test_Cases.LoginPageTestCase - LoginPage initialization completed
-00:56:17.504 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST STARTED: Login with valid credentials
-00:56:17.504 [INFO ] [main] Test_Cases.LoginPageTestCase - ARRANGE: Login page loaded and ready
-00:56:17.504 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Entering username: standard_user
-00:56:17.505 [INFO ] [main] Configurations.BasePage - Filling element: input[data-test='username'] with text (length: 13)
-00:56:17.505 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='username']
-00:56:17.572 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='username']
-00:56:17.603 [DEBUG] [main] Configurations.BasePage - Element filled successfully: input[data-test='username']
-00:56:17.603 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Entering password (length: 12)
-00:56:17.603 [INFO ] [main] Configurations.BasePage - Filling element: input[data-test='password'] with text (length: 12)
-00:56:17.603 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='password']
-00:56:17.624 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='password']
-00:56:17.641 [DEBUG] [main] Configurations.BasePage - Element filled successfully: input[data-test='password']
-00:56:17.641 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Clicking login button
-00:56:17.641 [INFO ] [main] Configurations.BasePage - Clicking element: input[data-test='login-button']
-00:56:17.641 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='login-button']
-00:56:17.647 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='login-button']
-00:56:17.844 [INFO ] [main] Configurations.BasePage - Element clicked successfully: input[data-test='login-button']
-00:56:17.845 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:17.847 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:17.847 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Verifying redirect to inventory page
-00:56:17.849 [INFO ] [main] Test_Cases.LoginPageTestCase - Current URL after login: https://www.saucedemo.com/inventory.html
-00:56:17.849 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST PASSED: User logged in successfully
-00:56:17.849 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:17.849 [INFO ] [main] Configurations.BaseTest - Starting test teardown...
-00:56:17.868 [DEBUG] [main] Configurations.BaseTest - Page closed
-00:56:17.973 [DEBUG] [main] Configurations.BaseTest - Context closed
-00:56:19.109 [DEBUG] [main] Configurations.BaseTest - Browser closed
-00:56:19.135 [DEBUG] [main] Configurations.BaseTest - Playwright closed
-00:56:19.135 [INFO ] [main] Configurations.BaseTest - Teardown completed successfully
-00:56:19.135 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:19.139 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:19.139 [INFO ] [main] Configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
-00:56:19.139 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:20.024 [INFO ] [main] Configurations.BaseTest - Launching Chromium browser
-00:56:20.839 [INFO ] [main] Configurations.BaseTest - Browser initialized successfully
-00:56:20.840 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:20.841 [INFO ] [main] Test_Cases.LoginPageTestCase - Initializing LoginPage test setup
-00:56:20.842 [INFO ] [main] Configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
-00:56:22.124 [INFO ] [main] Configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
-00:56:22.125 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:22.125 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:22.125 [INFO ] [main] Test_Cases.LoginPageTestCase - LoginPage initialization completed
-00:56:22.126 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST STARTED: Login with empty username
-00:56:22.126 [INFO ] [main] Test_Cases.LoginPageTestCase - ARRANGE: Login page loaded
-00:56:22.126 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Leaving username empty and entering password
-00:56:22.126 [INFO ] [main] Configurations.BasePage - Filling element: input[data-test='password'] with text (length: 12)
-00:56:22.126 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='password']
-00:56:22.196 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='password']
-00:56:22.231 [DEBUG] [main] Configurations.BasePage - Element filled successfully: input[data-test='password']
-00:56:22.231 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Clicking login button
-00:56:22.231 [INFO ] [main] Configurations.BasePage - Clicking element: input[data-test='login-button']
-00:56:22.231 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='login-button']
-00:56:22.246 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='login-button']
-00:56:22.313 [INFO ] [main] Configurations.BasePage - Element clicked successfully: input[data-test='login-button']
-00:56:22.313 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:22.313 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:22.313 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Checking if error message is displayed
-00:56:22.320 [DEBUG] [main] Configurations.BasePage - Element visibility check: [data-test='error'] -> true
-00:56:22.320 [DEBUG] [main] Configurations.BasePage - Getting text from element: [data-test='error']
-00:56:22.320 [DEBUG] [main] Configurations.BasePage - Waiting for element: [data-test='error']
-00:56:22.332 [DEBUG] [main] Configurations.BasePage - Element found: [data-test='error']
-00:56:22.343 [INFO ] [main] Configurations.BasePage - Retrieved text from element: [data-test='error'] -> 'Epic sadface: Username is required'
-00:56:22.343 [INFO ] [main] Test_Cases.LoginPageTestCase - Error message: Epic sadface: Username is required
-00:56:22.343 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST PASSED: Error message displayed for empty username
-00:56:22.345 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:22.345 [INFO ] [main] Configurations.BaseTest - Starting test teardown...
-00:56:22.356 [DEBUG] [main] Configurations.BaseTest - Page closed
-00:56:22.434 [DEBUG] [main] Configurations.BaseTest - Context closed
-00:56:23.420 [DEBUG] [main] Configurations.BaseTest - Browser closed
-00:56:23.459 [DEBUG] [main] Configurations.BaseTest - Playwright closed
-00:56:23.459 [INFO ] [main] Configurations.BaseTest - Teardown completed successfully
-00:56:23.459 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:23.467 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:23.467 [INFO ] [main] Configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
-00:56:23.467 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:24.453 [INFO ] [main] Configurations.BaseTest - Launching Chromium browser
-00:56:25.492 [INFO ] [main] Configurations.BaseTest - Browser initialized successfully
-00:56:25.492 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:25.492 [INFO ] [main] Test_Cases.LoginPageTestCase - Initializing LoginPage test setup
-00:56:25.492 [INFO ] [main] Configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
-00:56:26.637 [INFO ] [main] Configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
-00:56:26.637 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:26.637 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:26.637 [INFO ] [main] Test_Cases.LoginPageTestCase - LoginPage initialization completed
-00:56:26.638 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST STARTED: Verify login button is enabled
-00:56:26.638 [INFO ] [main] Test_Cases.LoginPageTestCase - ARRANGE: Login page loaded
-00:56:26.639 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Checking if login button is enabled
-00:56:26.701 [DEBUG] [main] Configurations.BasePage - Element enabled check: input[data-test='login-button'] -> true
-00:56:26.703 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST PASSED: Login button is enabled
-00:56:26.703 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:26.703 [INFO ] [main] Configurations.BaseTest - Starting test teardown...
-00:56:26.714 [DEBUG] [main] Configurations.BaseTest - Page closed
-00:56:26.806 [DEBUG] [main] Configurations.BaseTest - Context closed
-00:56:27.848 [DEBUG] [main] Configurations.BaseTest - Browser closed
-00:56:27.930 [DEBUG] [main] Configurations.BaseTest - Playwright closed
-00:56:27.930 [INFO ] [main] Configurations.BaseTest - Teardown completed successfully
-00:56:27.930 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:27.944 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:27.944 [INFO ] [main] Configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
-00:56:27.944 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:29.251 [INFO ] [main] Configurations.BaseTest - Launching Chromium browser
-00:56:30.112 [INFO ] [main] Configurations.BaseTest - Browser initialized successfully
-00:56:30.112 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:30.112 [INFO ] [main] Test_Cases.LoginPageTestCase - Initializing LoginPage test setup
-00:56:30.112 [INFO ] [main] Configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
-00:56:31.412 [INFO ] [main] Configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
-00:56:31.413 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:31.413 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:31.414 [INFO ] [main] Test_Cases.LoginPageTestCase - LoginPage initialization completed
-00:56:31.419 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST STARTED: Verify login page title
-00:56:31.419 [INFO ] [main] Test_Cases.LoginPageTestCase - ARRANGE: Login page loaded
-00:56:31.419 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Checking page title
-00:56:31.431 [INFO ] [main] Test_Cases.LoginPageTestCase - Page title: Swag Labs
-00:56:31.431 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST PASSED: Login page has valid title: Swag Labs
-00:56:31.432 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:31.432 [INFO ] [main] Configurations.BaseTest - Starting test teardown...
-00:56:31.444 [DEBUG] [main] Configurations.BaseTest - Page closed
-00:56:31.509 [DEBUG] [main] Configurations.BaseTest - Context closed
-00:56:32.504 [DEBUG] [main] Configurations.BaseTest - Browser closed
-00:56:32.533 [DEBUG] [main] Configurations.BaseTest - Playwright closed
-00:56:32.533 [INFO ] [main] Configurations.BaseTest - Teardown completed successfully
-00:56:32.533 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:32.536 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:32.537 [INFO ] [main] Configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
-00:56:32.537 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:33.502 [INFO ] [main] Configurations.BaseTest - Launching Chromium browser
-00:56:34.325 [INFO ] [main] Configurations.BaseTest - Browser initialized successfully
-00:56:34.325 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:34.325 [INFO ] [main] Test_Cases.LoginPageTestCase - Initializing LoginPage test setup
-00:56:34.325 [INFO ] [main] Configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
-00:56:35.677 [INFO ] [main] Configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
-00:56:35.677 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:35.678 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:35.678 [INFO ] [main] Test_Cases.LoginPageTestCase - LoginPage initialization completed
-00:56:35.678 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST STARTED: Login with invalid credentials
-00:56:35.679 [INFO ] [main] Test_Cases.LoginPageTestCase - ARRANGE: Login page loaded
-00:56:35.679 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Entering invalid username
-00:56:35.679 [INFO ] [main] Configurations.BasePage - Filling element: input[data-test='username'] with text (length: 15)
-00:56:35.679 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='username']
-00:56:35.743 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='username']
-00:56:35.775 [DEBUG] [main] Configurations.BasePage - Element filled successfully: input[data-test='username']
-00:56:35.775 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Entering invalid password
-00:56:35.775 [INFO ] [main] Configurations.BasePage - Filling element: input[data-test='password'] with text (length: 14)
-00:56:35.775 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='password']
-00:56:35.792 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='password']
-00:56:35.809 [DEBUG] [main] Configurations.BasePage - Element filled successfully: input[data-test='password']
-00:56:35.809 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Clicking login button
-00:56:35.809 [INFO ] [main] Configurations.BasePage - Clicking element: input[data-test='login-button']
-00:56:35.809 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='login-button']
-00:56:35.820 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='login-button']
-00:56:35.909 [INFO ] [main] Configurations.BasePage - Element clicked successfully: input[data-test='login-button']
-00:56:35.909 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:35.909 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:35.909 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Checking if error message is displayed
-00:56:35.924 [DEBUG] [main] Configurations.BasePage - Element visibility check: [data-test='error'] -> true
-00:56:35.924 [DEBUG] [main] Configurations.BasePage - Getting text from element: [data-test='error']
-00:56:35.924 [DEBUG] [main] Configurations.BasePage - Waiting for element: [data-test='error']
-00:56:35.940 [DEBUG] [main] Configurations.BasePage - Element found: [data-test='error']
-00:56:35.950 [INFO ] [main] Configurations.BasePage - Retrieved text from element: [data-test='error'] -> 'Epic sadface: Username and password do not match any user in this service'
-00:56:35.950 [INFO ] [main] Test_Cases.LoginPageTestCase - Error message displayed: Epic sadface: Username and password do not match any user in this service
-00:56:35.950 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST PASSED: Error message displayed for invalid credentials
-00:56:35.951 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:35.951 [INFO ] [main] Configurations.BaseTest - Starting test teardown...
-00:56:35.962 [DEBUG] [main] Configurations.BaseTest - Page closed
-00:56:36.046 [DEBUG] [main] Configurations.BaseTest - Context closed
-00:56:37.079 [DEBUG] [main] Configurations.BaseTest - Browser closed
-00:56:37.107 [DEBUG] [main] Configurations.BaseTest - Playwright closed
-00:56:37.107 [INFO ] [main] Configurations.BaseTest - Teardown completed successfully
-00:56:37.107 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:37.113 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:37.113 [INFO ] [main] Configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
-00:56:37.113 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:38.278 [INFO ] [main] Configurations.BaseTest - Launching Chromium browser
-00:56:39.236 [INFO ] [main] Configurations.BaseTest - Browser initialized successfully
-00:56:39.236 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:39.236 [INFO ] [main] Test_Cases.LoginPageTestCase - Initializing LoginPage test setup
-00:56:39.236 [INFO ] [main] Configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
-00:56:40.298 [INFO ] [main] Configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
-00:56:40.298 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:40.299 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:40.299 [INFO ] [main] Test_Cases.LoginPageTestCase - LoginPage initialization completed
-00:56:40.299 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST STARTED: Login with empty password
-00:56:40.300 [INFO ] [main] Test_Cases.LoginPageTestCase - ARRANGE: Login page loaded
-00:56:40.300 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Entering username and leaving password empty
-00:56:40.300 [INFO ] [main] Configurations.BasePage - Filling element: input[data-test='username'] with text (length: 13)
-00:56:40.300 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='username']
-00:56:40.378 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='username']
-00:56:40.423 [DEBUG] [main] Configurations.BasePage - Element filled successfully: input[data-test='username']
-00:56:40.425 [INFO ] [main] Test_Cases.LoginPageTestCase - ACT: Clicking login button
-00:56:40.425 [INFO ] [main] Configurations.BasePage - Clicking element: input[data-test='login-button']
-00:56:40.425 [DEBUG] [main] Configurations.BasePage - Waiting for element: input[data-test='login-button']
-00:56:40.439 [DEBUG] [main] Configurations.BasePage - Element found: input[data-test='login-button']
-00:56:40.518 [INFO ] [main] Configurations.BasePage - Element clicked successfully: input[data-test='login-button']
-00:56:40.520 [DEBUG] [main] Configurations.BasePage - Waiting for page load...
-00:56:40.520 [DEBUG] [main] Configurations.BasePage - Page load completed
-00:56:40.520 [INFO ] [main] Test_Cases.LoginPageTestCase - ASSERT: Checking if error message is displayed
-00:56:40.526 [DEBUG] [main] Configurations.BasePage - Element visibility check: [data-test='error'] -> true
-00:56:40.526 [DEBUG] [main] Configurations.BasePage - Getting text from element: [data-test='error']
-00:56:40.526 [DEBUG] [main] Configurations.BasePage - Waiting for element: [data-test='error']
-00:56:40.540 [DEBUG] [main] Configurations.BasePage - Element found: [data-test='error']
-00:56:40.548 [INFO ] [main] Configurations.BasePage - Retrieved text from element: [data-test='error'] -> 'Epic sadface: Password is required'
-00:56:40.548 [INFO ] [main] Test_Cases.LoginPageTestCase - Error message: Epic sadface: Password is required
-00:56:40.548 [INFO ] [main] Test_Cases.LoginPageTestCase - TEST PASSED: Error message displayed for empty password
-00:56:40.550 [INFO ] [main] Configurations.BaseTest - ========================================
-00:56:40.550 [INFO ] [main] Configurations.BaseTest - Starting test teardown...
-00:56:40.561 [DEBUG] [main] Configurations.BaseTest - Page closed
-00:56:40.642 [DEBUG] [main] Configurations.BaseTest - Context closed
-00:56:41.719 [DEBUG] [main] Configurations.BaseTest - Browser closed
-00:56:41.746 [DEBUG] [main] Configurations.BaseTest - Playwright closed
-00:56:41.746 [INFO ] [main] Configurations.BaseTest - Teardown completed successfully
-00:56:41.746 [INFO ] [main] Configurations.BaseTest - ========================================
+02:54:18.033 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:18.039 [INFO ] [main] configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
+02:54:18.043 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:31.357 [INFO ] [main] configurations.BaseTest - Launching Chromium browser
+02:54:33.591 [INFO ] [main] configurations.BaseTest - Browser initialized successfully
+02:54:33.591 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:33.592 [INFO ] [main] test_cases.LoginPageTestCase - Initializing LoginPage test setup
+02:54:33.592 [INFO ] [main] configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
+02:54:35.429 [INFO ] [main] configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
+02:54:35.429 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:54:35.433 [DEBUG] [main] configurations.BasePage - Page load completed
+02:54:35.433 [INFO ] [main] test_cases.LoginPageTestCase - LoginPage initialization completed
+02:54:35.435 [INFO ] [main] test_cases.LoginPageTestCase - TEST STARTED: Clear password field
+02:54:35.435 [INFO ] [main] test_cases.LoginPageTestCase - ARRANGE: Login page loaded
+02:54:35.435 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Entering password
+02:54:35.435 [INFO ] [main] configurations.BasePage - Filling element: input[data-test='password'] with text (length: 13)
+02:54:35.435 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='password']
+02:54:35.508 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='password']
+02:54:35.533 [DEBUG] [main] configurations.BasePage - Element filled successfully: input[data-test='password']
+02:54:35.534 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Clearing password field
+02:54:35.534 [INFO ] [main] configurations.BasePage - Clearing field: input[data-test='password']
+02:54:35.534 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='password']
+02:54:35.545 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='password']
+02:54:35.559 [INFO ] [main] configurations.BasePage - Field cleared successfully: input[data-test='password']
+02:54:35.559 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Checking if password field is empty
+02:54:35.559 [DEBUG] [main] configurations.BasePage - Getting input value from: input[data-test='password']
+02:54:35.560 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='password']
+02:54:35.567 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='password']
+02:54:35.575 [DEBUG] [main] configurations.BasePage - Retrieved input value from: input[data-test='password'] -> ''
+02:54:35.580 [INFO ] [main] test_cases.LoginPageTestCase - TEST PASSED: Password field cleared successfully
+02:54:35.583 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:35.583 [INFO ] [main] configurations.BaseTest - Starting test teardown...
+02:54:35.593 [DEBUG] [main] configurations.BaseTest - Page closed
+02:54:35.633 [DEBUG] [main] configurations.BaseTest - Context closed
+02:54:36.078 [DEBUG] [main] configurations.BaseTest - Browser closed
+02:54:36.100 [DEBUG] [main] configurations.BaseTest - Playwright closed
+02:54:36.101 [INFO ] [main] configurations.BaseTest - Teardown completed successfully
+02:54:36.101 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:36.117 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:36.122 [INFO ] [main] configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
+02:54:36.122 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:36.990 [INFO ] [main] configurations.BaseTest - Launching Chromium browser
+02:54:37.599 [INFO ] [main] configurations.BaseTest - Browser initialized successfully
+02:54:37.600 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:37.600 [INFO ] [main] test_cases.LoginPageTestCase - Initializing LoginPage test setup
+02:54:37.601 [INFO ] [main] configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
+02:54:39.820 [INFO ] [main] configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
+02:54:39.821 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:54:39.824 [DEBUG] [main] configurations.BasePage - Page load completed
+02:54:39.824 [INFO ] [main] test_cases.LoginPageTestCase - LoginPage initialization completed
+02:54:39.824 [INFO ] [main] test_cases.LoginPageTestCase - TEST STARTED: Verify all login page elements are visible
+02:54:39.824 [INFO ] [main] test_cases.LoginPageTestCase - ARRANGE: Login page loaded
+02:54:39.824 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Checking if username field is visible
+02:54:39.856 [DEBUG] [main] configurations.BasePage - Element visibility check: input[data-test='username'] -> true
+02:54:39.856 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Checking if password field is visible
+02:54:39.868 [DEBUG] [main] configurations.BasePage - Element visibility check: input[data-test='password'] -> true
+02:54:39.869 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Checking if login button is visible
+02:54:39.874 [DEBUG] [main] configurations.BasePage - Element visibility check: input[data-test='login-button'] -> true
+02:54:39.874 [INFO ] [main] test_cases.LoginPageTestCase - TEST PASSED: All login page elements are visible
+02:54:39.875 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:39.875 [INFO ] [main] configurations.BaseTest - Starting test teardown...
+02:54:39.882 [DEBUG] [main] configurations.BaseTest - Page closed
+02:54:39.912 [DEBUG] [main] configurations.BaseTest - Context closed
+02:54:40.394 [DEBUG] [main] configurations.BaseTest - Browser closed
+02:54:40.424 [DEBUG] [main] configurations.BaseTest - Playwright closed
+02:54:40.426 [INFO ] [main] configurations.BaseTest - Teardown completed successfully
+02:54:40.426 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:40.430 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:40.430 [INFO ] [main] configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
+02:54:40.430 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:42.063 [INFO ] [main] configurations.BaseTest - Launching Chromium browser
+02:54:42.723 [INFO ] [main] configurations.BaseTest - Browser initialized successfully
+02:54:42.723 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:42.723 [INFO ] [main] test_cases.LoginPageTestCase - Initializing LoginPage test setup
+02:54:42.723 [INFO ] [main] configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
+02:54:44.855 [INFO ] [main] configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
+02:54:44.855 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:54:44.856 [DEBUG] [main] configurations.BasePage - Page load completed
+02:54:44.858 [INFO ] [main] test_cases.LoginPageTestCase - LoginPage initialization completed
+02:54:44.861 [INFO ] [main] test_cases.LoginPageTestCase - TEST STARTED: Locked out user cannot login
+02:54:44.862 [INFO ] [main] test_cases.LoginPageTestCase - ARRANGE: Login page loaded
+02:54:44.862 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Entering locked out username
+02:54:44.862 [INFO ] [main] configurations.BasePage - Filling element: input[data-test='username'] with text (length: 15)
+02:54:44.862 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='username']
+02:54:44.910 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='username']
+02:54:44.942 [DEBUG] [main] configurations.BasePage - Element filled successfully: input[data-test='username']
+02:54:44.942 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Entering password
+02:54:44.942 [INFO ] [main] configurations.BasePage - Filling element: input[data-test='password'] with text (length: 12)
+02:54:44.942 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='password']
+02:54:44.952 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='password']
+02:54:44.962 [DEBUG] [main] configurations.BasePage - Element filled successfully: input[data-test='password']
+02:54:44.962 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Clicking login button
+02:54:44.963 [INFO ] [main] configurations.BasePage - Clicking element: input[data-test='login-button']
+02:54:44.963 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='login-button']
+02:54:44.970 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='login-button']
+02:54:45.024 [INFO ] [main] configurations.BasePage - Element clicked successfully: input[data-test='login-button']
+02:54:45.024 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:54:45.026 [DEBUG] [main] configurations.BasePage - Page load completed
+02:54:45.026 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Checking if locked out error message is displayed
+02:54:45.031 [DEBUG] [main] configurations.BasePage - Element visibility check: [data-test='error-button'] -> true
+02:54:45.032 [DEBUG] [main] configurations.BasePage - Getting text from element: [data-test='error']
+02:54:45.032 [DEBUG] [main] configurations.BasePage - Waiting for element: [data-test='error']
+02:54:45.040 [DEBUG] [main] configurations.BasePage - Element found: [data-test='error']
+02:54:45.045 [INFO ] [main] configurations.BasePage - Retrieved text from element: [data-test='error'] -> 'Epic sadface: Sorry, this user has been locked out.'
+02:54:45.045 [INFO ] [main] test_cases.LoginPageTestCase - Error message: Epic sadface: Sorry, this user has been locked out.
+02:54:45.045 [INFO ] [main] test_cases.LoginPageTestCase - TEST PASSED: Locked out user cannot login
+02:54:45.046 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:45.046 [INFO ] [main] configurations.BaseTest - Starting test teardown...
+02:54:45.054 [DEBUG] [main] configurations.BaseTest - Page closed
+02:54:45.092 [DEBUG] [main] configurations.BaseTest - Context closed
+02:54:45.569 [DEBUG] [main] configurations.BaseTest - Browser closed
+02:54:45.589 [DEBUG] [main] configurations.BaseTest - Playwright closed
+02:54:45.589 [INFO ] [main] configurations.BaseTest - Teardown completed successfully
+02:54:45.589 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:45.593 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:45.593 [INFO ] [main] configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
+02:54:45.593 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:46.214 [INFO ] [main] configurations.BaseTest - Launching Chromium browser
+02:54:46.890 [INFO ] [main] configurations.BaseTest - Browser initialized successfully
+02:54:46.890 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:46.912 [INFO ] [main] test_cases.LoginPageTestCase - Initializing LoginPage test setup
+02:54:46.912 [INFO ] [main] configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
+02:54:48.739 [INFO ] [main] configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
+02:54:48.740 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:54:48.740 [DEBUG] [main] configurations.BasePage - Page load completed
+02:54:48.740 [INFO ] [main] test_cases.LoginPageTestCase - LoginPage initialization completed
+02:54:48.742 [INFO ] [main] test_cases.LoginPageTestCase - TEST STARTED: Clear username field
+02:54:48.744 [INFO ] [main] test_cases.LoginPageTestCase - ARRANGE: Login page loaded
+02:54:48.745 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Entering username
+02:54:48.747 [INFO ] [main] configurations.BasePage - Filling element: input[data-test='username'] with text (length: 9)
+02:54:48.747 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='username']
+02:54:48.792 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='username']
+02:54:48.822 [DEBUG] [main] configurations.BasePage - Element filled successfully: input[data-test='username']
+02:54:48.822 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Clearing username field
+02:54:48.822 [INFO ] [main] configurations.BasePage - Clearing field: input[data-test='username']
+02:54:48.822 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='username']
+02:54:48.835 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='username']
+02:54:48.845 [INFO ] [main] configurations.BasePage - Field cleared successfully: input[data-test='username']
+02:54:48.846 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Checking if username field is empty
+02:54:48.846 [DEBUG] [main] configurations.BasePage - Getting input value from: input[data-test='username']
+02:54:48.846 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='username']
+02:54:48.854 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='username']
+02:54:48.858 [DEBUG] [main] configurations.BasePage - Retrieved input value from: input[data-test='username'] -> ''
+02:54:48.858 [INFO ] [main] test_cases.LoginPageTestCase - TEST PASSED: Username field cleared successfully
+02:54:48.858 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:48.858 [INFO ] [main] configurations.BaseTest - Starting test teardown...
+02:54:48.867 [DEBUG] [main] configurations.BaseTest - Page closed
+02:54:48.901 [DEBUG] [main] configurations.BaseTest - Context closed
+02:54:49.294 [DEBUG] [main] configurations.BaseTest - Browser closed
+02:54:49.312 [DEBUG] [main] configurations.BaseTest - Playwright closed
+02:54:49.312 [INFO ] [main] configurations.BaseTest - Teardown completed successfully
+02:54:49.312 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:49.318 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:49.318 [INFO ] [main] configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
+02:54:49.318 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:49.929 [INFO ] [main] configurations.BaseTest - Launching Chromium browser
+02:54:50.693 [INFO ] [main] configurations.BaseTest - Browser initialized successfully
+02:54:50.693 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:50.694 [INFO ] [main] test_cases.LoginPageTestCase - Initializing LoginPage test setup
+02:54:50.694 [INFO ] [main] configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
+02:54:51.457 [INFO ] [main] configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
+02:54:51.457 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:54:51.457 [DEBUG] [main] configurations.BasePage - Page load completed
+02:54:51.457 [INFO ] [main] test_cases.LoginPageTestCase - LoginPage initialization completed
+02:54:51.458 [INFO ] [main] test_cases.LoginPageTestCase - TEST STARTED: Login with valid credentials
+02:54:51.462 [INFO ] [main] test_cases.LoginPageTestCase - ARRANGE: Login page loaded and ready
+02:54:51.465 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Entering username: standard_user
+02:54:51.466 [INFO ] [main] configurations.BasePage - Filling element: input[data-test='username'] with text (length: 13)
+02:54:51.466 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='username']
+02:54:51.518 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='username']
+02:54:51.543 [DEBUG] [main] configurations.BasePage - Element filled successfully: input[data-test='username']
+02:54:51.543 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Entering password (length: 12)
+02:54:51.543 [INFO ] [main] configurations.BasePage - Filling element: input[data-test='password'] with text (length: 12)
+02:54:51.543 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='password']
+02:54:51.553 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='password']
+02:54:51.567 [DEBUG] [main] configurations.BasePage - Element filled successfully: input[data-test='password']
+02:54:51.568 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Clicking login button
+02:54:51.568 [INFO ] [main] configurations.BasePage - Clicking element: input[data-test='login-button']
+02:54:51.568 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='login-button']
+02:54:51.577 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='login-button']
+02:54:51.718 [INFO ] [main] configurations.BasePage - Element clicked successfully: input[data-test='login-button']
+02:54:51.718 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:54:51.725 [DEBUG] [main] configurations.BasePage - Page load completed
+02:54:51.726 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Verifying redirect to inventory page
+02:54:51.726 [INFO ] [main] test_cases.LoginPageTestCase - Current URL after login: https://www.saucedemo.com/inventory.html
+02:54:51.726 [INFO ] [main] test_cases.LoginPageTestCase - TEST PASSED: User logged in successfully
+02:54:51.726 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:51.726 [INFO ] [main] configurations.BaseTest - Starting test teardown...
+02:54:51.760 [DEBUG] [main] configurations.BaseTest - Page closed
+02:54:51.791 [DEBUG] [main] configurations.BaseTest - Context closed
+02:54:52.195 [DEBUG] [main] configurations.BaseTest - Browser closed
+02:54:52.215 [DEBUG] [main] configurations.BaseTest - Playwright closed
+02:54:52.216 [INFO ] [main] configurations.BaseTest - Teardown completed successfully
+02:54:52.217 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:52.220 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:52.221 [INFO ] [main] configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
+02:54:52.221 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:52.847 [INFO ] [main] configurations.BaseTest - Launching Chromium browser
+02:54:53.458 [INFO ] [main] configurations.BaseTest - Browser initialized successfully
+02:54:53.458 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:53.459 [INFO ] [main] test_cases.LoginPageTestCase - Initializing LoginPage test setup
+02:54:53.459 [INFO ] [main] configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
+02:54:54.325 [INFO ] [main] configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
+02:54:54.326 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:54:54.327 [DEBUG] [main] configurations.BasePage - Page load completed
+02:54:54.327 [INFO ] [main] test_cases.LoginPageTestCase - LoginPage initialization completed
+02:54:54.331 [INFO ] [main] test_cases.LoginPageTestCase - TEST STARTED: Login with empty username
+02:54:54.332 [INFO ] [main] test_cases.LoginPageTestCase - ARRANGE: Login page loaded
+02:54:54.332 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Leaving username empty and entering password
+02:54:54.332 [INFO ] [main] configurations.BasePage - Filling element: input[data-test='password'] with text (length: 12)
+02:54:54.332 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='password']
+02:54:54.378 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='password']
+02:54:54.405 [DEBUG] [main] configurations.BasePage - Element filled successfully: input[data-test='password']
+02:54:54.405 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Clicking login button
+02:54:54.405 [INFO ] [main] configurations.BasePage - Clicking element: input[data-test='login-button']
+02:54:54.405 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='login-button']
+02:54:54.416 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='login-button']
+02:54:54.487 [INFO ] [main] configurations.BasePage - Element clicked successfully: input[data-test='login-button']
+02:54:54.487 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:54:54.487 [DEBUG] [main] configurations.BasePage - Page load completed
+02:54:54.488 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Checking if error message is displayed
+02:54:54.500 [DEBUG] [main] configurations.BasePage - Element visibility check: [data-test='error'] -> true
+02:54:54.500 [DEBUG] [main] configurations.BasePage - Getting text from element: [data-test='error']
+02:54:54.500 [DEBUG] [main] configurations.BasePage - Waiting for element: [data-test='error']
+02:54:54.509 [DEBUG] [main] configurations.BasePage - Element found: [data-test='error']
+02:54:54.514 [INFO ] [main] configurations.BasePage - Retrieved text from element: [data-test='error'] -> 'Epic sadface: Username is required'
+02:54:54.515 [INFO ] [main] test_cases.LoginPageTestCase - Error message: Epic sadface: Username is required
+02:54:54.515 [INFO ] [main] test_cases.LoginPageTestCase - TEST PASSED: Error message displayed for empty username
+02:54:54.515 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:54.515 [INFO ] [main] configurations.BaseTest - Starting test teardown...
+02:54:54.521 [DEBUG] [main] configurations.BaseTest - Page closed
+02:54:54.561 [DEBUG] [main] configurations.BaseTest - Context closed
+02:54:54.992 [DEBUG] [main] configurations.BaseTest - Browser closed
+02:54:55.011 [DEBUG] [main] configurations.BaseTest - Playwright closed
+02:54:55.011 [INFO ] [main] configurations.BaseTest - Teardown completed successfully
+02:54:55.011 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:55.016 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:55.016 [INFO ] [main] configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
+02:54:55.016 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:56.311 [INFO ] [main] configurations.BaseTest - Launching Chromium browser
+02:54:56.941 [INFO ] [main] configurations.BaseTest - Browser initialized successfully
+02:54:56.941 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:56.941 [INFO ] [main] test_cases.LoginPageTestCase - Initializing LoginPage test setup
+02:54:56.941 [INFO ] [main] configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
+02:54:57.718 [INFO ] [main] configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
+02:54:57.718 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:54:57.718 [DEBUG] [main] configurations.BasePage - Page load completed
+02:54:57.718 [INFO ] [main] test_cases.LoginPageTestCase - LoginPage initialization completed
+02:54:57.718 [INFO ] [main] test_cases.LoginPageTestCase - TEST STARTED: Verify login button is enabled
+02:54:57.718 [INFO ] [main] test_cases.LoginPageTestCase - ARRANGE: Login page loaded
+02:54:57.718 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Checking if login button is enabled
+02:54:57.764 [DEBUG] [main] configurations.BasePage - Element enabled check: input[data-test='login-button'] -> true
+02:54:57.764 [INFO ] [main] test_cases.LoginPageTestCase - TEST PASSED: Login button is enabled
+02:54:57.764 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:57.764 [INFO ] [main] configurations.BaseTest - Starting test teardown...
+02:54:57.777 [DEBUG] [main] configurations.BaseTest - Page closed
+02:54:57.807 [DEBUG] [main] configurations.BaseTest - Context closed
+02:54:58.239 [DEBUG] [main] configurations.BaseTest - Browser closed
+02:54:58.260 [DEBUG] [main] configurations.BaseTest - Playwright closed
+02:54:58.260 [INFO ] [main] configurations.BaseTest - Teardown completed successfully
+02:54:58.260 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:58.266 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:58.266 [INFO ] [main] configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
+02:54:58.266 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:58.869 [INFO ] [main] configurations.BaseTest - Launching Chromium browser
+02:54:59.457 [INFO ] [main] configurations.BaseTest - Browser initialized successfully
+02:54:59.457 [INFO ] [main] configurations.BaseTest - ========================================
+02:54:59.458 [INFO ] [main] test_cases.LoginPageTestCase - Initializing LoginPage test setup
+02:54:59.458 [INFO ] [main] configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
+02:55:00.390 [INFO ] [main] configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
+02:55:00.390 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:55:00.390 [DEBUG] [main] configurations.BasePage - Page load completed
+02:55:00.392 [INFO ] [main] test_cases.LoginPageTestCase - LoginPage initialization completed
+02:55:00.393 [INFO ] [main] test_cases.LoginPageTestCase - TEST STARTED: Verify login page title
+02:55:00.393 [INFO ] [main] test_cases.LoginPageTestCase - ARRANGE: Login page loaded
+02:55:00.394 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Checking page title
+02:55:00.408 [INFO ] [main] test_cases.LoginPageTestCase - Page title: Swag Labs
+02:55:00.408 [INFO ] [main] test_cases.LoginPageTestCase - TEST PASSED: Login page has valid title: Swag Labs
+02:55:00.411 [INFO ] [main] configurations.BaseTest - ========================================
+02:55:00.411 [INFO ] [main] configurations.BaseTest - Starting test teardown...
+02:55:00.420 [DEBUG] [main] configurations.BaseTest - Page closed
+02:55:00.453 [DEBUG] [main] configurations.BaseTest - Context closed
+02:55:01.024 [DEBUG] [main] configurations.BaseTest - Browser closed
+02:55:01.046 [DEBUG] [main] configurations.BaseTest - Playwright closed
+02:55:01.046 [INFO ] [main] configurations.BaseTest - Teardown completed successfully
+02:55:01.046 [INFO ] [main] configurations.BaseTest - ========================================
+02:55:01.050 [INFO ] [main] configurations.BaseTest - ========================================
+02:55:01.050 [INFO ] [main] configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
+02:55:01.050 [INFO ] [main] configurations.BaseTest - ========================================
+02:55:01.898 [INFO ] [main] configurations.BaseTest - Launching Chromium browser
+02:55:02.550 [INFO ] [main] configurations.BaseTest - Browser initialized successfully
+02:55:02.550 [INFO ] [main] configurations.BaseTest - ========================================
+02:55:02.551 [INFO ] [main] test_cases.LoginPageTestCase - Initializing LoginPage test setup
+02:55:02.551 [INFO ] [main] configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
+02:55:03.350 [INFO ] [main] configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
+02:55:03.350 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:55:03.351 [DEBUG] [main] configurations.BasePage - Page load completed
+02:55:03.351 [INFO ] [main] test_cases.LoginPageTestCase - LoginPage initialization completed
+02:55:03.352 [INFO ] [main] test_cases.LoginPageTestCase - TEST STARTED: Login with invalid credentials
+02:55:03.352 [INFO ] [main] test_cases.LoginPageTestCase - ARRANGE: Login page loaded
+02:55:03.352 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Entering invalid username
+02:55:03.352 [INFO ] [main] configurations.BasePage - Filling element: input[data-test='username'] with text (length: 15)
+02:55:03.352 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='username']
+02:55:03.402 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='username']
+02:55:03.428 [DEBUG] [main] configurations.BasePage - Element filled successfully: input[data-test='username']
+02:55:03.428 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Entering invalid password
+02:55:03.428 [INFO ] [main] configurations.BasePage - Filling element: input[data-test='password'] with text (length: 14)
+02:55:03.428 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='password']
+02:55:03.436 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='password']
+02:55:03.448 [DEBUG] [main] configurations.BasePage - Element filled successfully: input[data-test='password']
+02:55:03.448 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Clicking login button
+02:55:03.448 [INFO ] [main] configurations.BasePage - Clicking element: input[data-test='login-button']
+02:55:03.448 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='login-button']
+02:55:03.455 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='login-button']
+02:55:03.551 [INFO ] [main] configurations.BasePage - Element clicked successfully: input[data-test='login-button']
+02:55:03.551 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:55:03.554 [DEBUG] [main] configurations.BasePage - Page load completed
+02:55:03.554 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Checking if error message is displayed
+02:55:03.564 [DEBUG] [main] configurations.BasePage - Element visibility check: [data-test='error'] -> true
+02:55:03.564 [DEBUG] [main] configurations.BasePage - Getting text from element: [data-test='error']
+02:55:03.564 [DEBUG] [main] configurations.BasePage - Waiting for element: [data-test='error']
+02:55:03.582 [DEBUG] [main] configurations.BasePage - Element found: [data-test='error']
+02:55:03.586 [INFO ] [main] configurations.BasePage - Retrieved text from element: [data-test='error'] -> 'Epic sadface: Username and password do not match any user in this service'
+02:55:03.586 [INFO ] [main] test_cases.LoginPageTestCase - Error message displayed: Epic sadface: Username and password do not match any user in this service
+02:55:03.586 [INFO ] [main] test_cases.LoginPageTestCase - TEST PASSED: Error message displayed for invalid credentials
+02:55:03.587 [INFO ] [main] configurations.BaseTest - ========================================
+02:55:03.587 [INFO ] [main] configurations.BaseTest - Starting test teardown...
+02:55:03.597 [DEBUG] [main] configurations.BaseTest - Page closed
+02:55:03.634 [DEBUG] [main] configurations.BaseTest - Context closed
+02:55:04.020 [DEBUG] [main] configurations.BaseTest - Browser closed
+02:55:04.037 [DEBUG] [main] configurations.BaseTest - Playwright closed
+02:55:04.037 [INFO ] [main] configurations.BaseTest - Teardown completed successfully
+02:55:04.037 [INFO ] [main] configurations.BaseTest - ========================================
+02:55:04.041 [INFO ] [main] configurations.BaseTest - ========================================
+02:55:04.041 [INFO ] [main] configurations.BaseTest - Browser Setup - Browser: chromium, Headless: false, Viewport: 1080x800
+02:55:04.041 [INFO ] [main] configurations.BaseTest - ========================================
+02:55:04.671 [INFO ] [main] configurations.BaseTest - Launching Chromium browser
+02:55:05.307 [INFO ] [main] configurations.BaseTest - Browser initialized successfully
+02:55:05.307 [INFO ] [main] configurations.BaseTest - ========================================
+02:55:05.307 [INFO ] [main] test_cases.LoginPageTestCase - Initializing LoginPage test setup
+02:55:05.307 [INFO ] [main] configurations.BasePage - Navigating to URL: https://www.saucedemo.com/
+02:55:06.106 [INFO ] [main] configurations.BasePage - Page loaded successfully: https://www.saucedemo.com/
+02:55:06.107 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:55:06.107 [DEBUG] [main] configurations.BasePage - Page load completed
+02:55:06.107 [INFO ] [main] test_cases.LoginPageTestCase - LoginPage initialization completed
+02:55:06.107 [INFO ] [main] test_cases.LoginPageTestCase - TEST STARTED: Login with empty password
+02:55:06.107 [INFO ] [main] test_cases.LoginPageTestCase - ARRANGE: Login page loaded
+02:55:06.107 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Entering username and leaving password empty
+02:55:06.108 [INFO ] [main] configurations.BasePage - Filling element: input[data-test='username'] with text (length: 13)
+02:55:06.108 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='username']
+02:55:06.161 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='username']
+02:55:06.186 [DEBUG] [main] configurations.BasePage - Element filled successfully: input[data-test='username']
+02:55:06.186 [INFO ] [main] test_cases.LoginPageTestCase - ACT: Clicking login button
+02:55:06.186 [INFO ] [main] configurations.BasePage - Clicking element: input[data-test='login-button']
+02:55:06.186 [DEBUG] [main] configurations.BasePage - Waiting for element: input[data-test='login-button']
+02:55:06.197 [DEBUG] [main] configurations.BasePage - Element found: input[data-test='login-button']
+02:55:06.278 [INFO ] [main] configurations.BasePage - Element clicked successfully: input[data-test='login-button']
+02:55:06.278 [DEBUG] [main] configurations.BasePage - Waiting for page load...
+02:55:06.278 [DEBUG] [main] configurations.BasePage - Page load completed
+02:55:06.279 [INFO ] [main] test_cases.LoginPageTestCase - ASSERT: Checking if error message is displayed
+02:55:06.288 [DEBUG] [main] configurations.BasePage - Element visibility check: [data-test='error'] -> true
+02:55:06.288 [DEBUG] [main] configurations.BasePage - Getting text from element: [data-test='error']
+02:55:06.288 [DEBUG] [main] configurations.BasePage - Waiting for element: [data-test='error']
+02:55:06.296 [DEBUG] [main] configurations.BasePage - Element found: [data-test='error']
+02:55:06.300 [INFO ] [main] configurations.BasePage - Retrieved text from element: [data-test='error'] -> 'Epic sadface: Password is required'
+02:55:06.300 [INFO ] [main] test_cases.LoginPageTestCase - Error message: Epic sadface: Password is required
+02:55:06.300 [INFO ] [main] test_cases.LoginPageTestCase - TEST PASSED: Error message displayed for empty password
+02:55:06.300 [INFO ] [main] configurations.BaseTest - ========================================
+02:55:06.300 [INFO ] [main] configurations.BaseTest - Starting test teardown...
+02:55:06.306 [DEBUG] [main] configurations.BaseTest - Page closed
+02:55:06.340 [DEBUG] [main] configurations.BaseTest - Context closed
+02:55:06.744 [DEBUG] [main] configurations.BaseTest - Browser closed
+02:55:06.760 [DEBUG] [main] configurations.BaseTest - Playwright closed
+02:55:06.760 [INFO ] [main] configurations.BaseTest - Teardown completed successfully
+02:55:06.760 [INFO ] [main] configurations.BaseTest - ========================================

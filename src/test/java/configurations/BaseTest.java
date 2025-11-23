@@ -1,6 +1,6 @@
-package Configurations;
+package configurations;
 
-import Utilities.Config;
+import utilities.Config;
 import com.microsoft.playwright.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

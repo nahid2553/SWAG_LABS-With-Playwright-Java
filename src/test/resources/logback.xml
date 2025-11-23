@@ -27,7 +27,7 @@
     </root>
 
     <!-- Specific logger for your tests (optional - for more detailed logging) -->
-    <logger name="Test_Cases" level="DEBUG"/>
-    <logger name="Pages" level="DEBUG"/>
-    <logger name="Configurations" level="DEBUG"/>
+    <logger name="test_cases" level="DEBUG"/>
+    <logger name="pages" level="DEBUG"/>
+    <logger name="configurations" level="DEBUG"/>
 </configuration>

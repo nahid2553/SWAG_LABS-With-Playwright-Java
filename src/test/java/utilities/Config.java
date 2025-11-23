@@ -1,6 +1,4 @@
-package Utilities;
-
-import com.microsoft.playwright.Page;
+package utilities;
 
 public class Config {
 
