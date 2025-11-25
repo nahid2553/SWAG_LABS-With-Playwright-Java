@@ -35,4 +35,15 @@ This repository contains an automated UI test suite for **SWAG_Lab**, built usin
            └── logback.xml
 
 
-    
+
+## ✅ Features
+
+- Page Object Model (POM) design pattern
+- JUnit 5 for test configuration and execution
+- Browser-based automation using Playwright
+- Configuration via JUnit 5 annotations and properties file
+- Allure HTML reports with test evidence
+
+## 🧪 Test Scenarios
+
+The automation test suite includes:
