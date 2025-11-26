@@ -49,6 +49,30 @@ This repository contains an automated UI test suite for **SWAG_Lab**, built usin
 The automation test suite includes:
 
 ## Class Analysis
-✅ BasePage
-- Common tools
-- Methods that every page needs
+1️⃣ Config Class
+- Centralized Settings & Control Panel
+- Stores all important settings in ONE place
+
+2️⃣ BasePage Class
+- Common Toolkit
+- Stores common methods that every page needs
+
+3️⃣ LoginPage Class
+- Login-Specific Actions
+- Extends BasePage & Contains login page selectors and login methods
+
+4️⃣ BaseTest Class
+- Initializes browser before each test
+- Test Setup & Cleanup after each test
+
+5️⃣ LoginPageTestCase Class
+- Contains all login-related test cases with possible scenarios
+- Uses LoginPage to perform actions
+- Uses assertions to verify results
+
+6️⃣ Logback Configuration (logback.xml)
+- Controls where logs go (console, file)
+- Controls what gets logged (DEBUG, INFO, ERROR)
+
+7️⃣ POM.xml (Maven Configuration)
+- Project Dependencies & Build Settings
