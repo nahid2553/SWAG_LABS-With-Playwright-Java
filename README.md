@@ -47,3 +47,8 @@ This repository contains an automated UI test suite for **SWAG_Lab**, built usin
 ## 🧪 Test Scenarios
 
 The automation test suite includes:
+
+## Class Analysis
+✅ BasePage
+- Common tools
+- Methods that every page needs
