@@ -1,14 +1,14 @@
 package configurations;
 
 import utilities.Config;
-import com.microsoft.playwright.*;
-import org.junit.jupiter.api.AfterEach;
+import com.microsoft.playwright.*;  //Bring in Playwright tools
+import org.junit.jupiter.api.AfterEach;  //Import @AfterEach annotation
 import org.junit.jupiter.api.BeforeEach;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class BaseTest {
-    protected static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
+    protected static final Logger logger = LoggerFactory.getLogger(BaseTest.class);  //Create a logger to record events
     private static final String SEPARATOR = "========================================";
 
     protected Browser browser;
@@ -16,7 +16,7 @@ public class BaseTest {
     protected BrowserContext context;
     protected Playwright playwright;
 
-    @BeforeEach
+    @BeforeEach  //Annotation (tells JUnit to run this before each test)
     public void setUp() {
         logger.info(SEPARATOR);
         logger.info("Browser Setup - Browser: {}, Headless: {}, Viewport: {}x{}",
@@ -31,7 +31,7 @@ public class BaseTest {
             browser = switch(Config.BROWSER.toLowerCase()) {
                 case "firefox" -> {
                     logger.info("Launching Firefox browser");
-                    yield playwright.firefox().launch(
+                    yield playwright.firefox().launch(  //Return value from the switch case
                             new BrowserType.LaunchOptions().setHeadless(Config.isHeadlessMode())
                     );
                 }
@@ -94,4 +94,5 @@ public class BaseTest {
             logger.error("Error during teardown", e);
         }
     }
+
 }
