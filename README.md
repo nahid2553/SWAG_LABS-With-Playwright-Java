@@ -47,6 +47,11 @@ This repository contains an automated UI test suite for **SWAG_Lab**, built usin
 ## 🧪 Test Scenarios
 
 The automation test suite includes:
+1.  **Login Cases for user**  
+
+    -   Inter username
+    -   Inter password
+    -   Click login button
 
 ## Class Analysis
 1️⃣ Config Class
