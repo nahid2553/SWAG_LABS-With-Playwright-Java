@@ -60,7 +60,7 @@ public class BasePage {
             if (text == null || text.isEmpty()) {
                 logger.warn("Filling with empty text: {}", selector);
             } else {
-                logger.info("Filling element: {} with {} characters", selector, text.length());
+                logger.info("Filling element: {}", selector);
             }
             Locator locator = getLocator(selector);
             locator.waitFor(new Locator.WaitForOptions().setTimeout(Config.EXPLICIT_WAIT));

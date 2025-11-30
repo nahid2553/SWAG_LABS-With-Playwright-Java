@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 public class BaseTest {
     protected static final Logger logger = LoggerFactory.getLogger(BaseTest.class);  //Create a logger to record events
     private static final String SEPARATOR = "========================================";
-
+    protected static final String TEST_FAILED_MESSAGE = "❌ TEST FAILED--------------------------";
     protected Browser browser;
     protected Page page;
     protected BrowserContext context;
