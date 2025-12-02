@@ -266,13 +266,3 @@ public class LoginPageTestCase extends BaseTest {
     }
 
 }
-
-
-//🔷 Starting test:
-//📋 Test purpose:
-//📝 Test data being used:
-//🎯 Expected outcome:
-//⏳ Executing test scenario...
-//📊 Summary:
-//⚠️  Error message:
-//🔍 Possible cause:
