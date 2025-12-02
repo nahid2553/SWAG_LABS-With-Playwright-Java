@@ -1,6 +1,9 @@
 package test_cases;
 
 import configurations.BaseTest;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import pages.LoginPage;
 import utilities.Config;
 import org.junit.jupiter.api.Test;
@@ -28,6 +31,10 @@ public class LoginPageTestCase extends BaseTest {
     // ==================== POSITIVE TEST CASES ====================
 
     @Test
+    @Tag("smoke")
+    @Tag("critical")
+    @Tag("functional")
+    @Tag("quick")
     @DisplayName("TC001: User should login successfully with valid credentials")
     public void testLoginWithValidCredentials() {
         logger.info("🔷 TC001: Starting - Login with valid credentials");
@@ -41,6 +48,9 @@ public class LoginPageTestCase extends BaseTest {
     }
 
     @Test
+    @Tag("smoke")
+    @Tag("critical")
+    @Tag("ui")
     @DisplayName("TC002: Login button is enabled and clickable on login page")
     public void testLoginButtonEnabled() {
         logger.info("🔷 TC002: Starting - Login button enabled check");
@@ -49,6 +59,8 @@ public class LoginPageTestCase extends BaseTest {
     }
 
     @Test
+    @Tag("smoke")
+    @Tag("ui")
     @DisplayName("TC003: All login page elements are visible")
     public void testLoginPageElementsVisibility() {
         logger.info("🔷 TC003: Starting - Login page elements visibility check");
@@ -59,6 +71,8 @@ public class LoginPageTestCase extends BaseTest {
     // ==================== NEGATIVE TEST CASES ====================
 
     @Test
+    @Tag("functional")
+    @Tag("critical")
     @DisplayName("TC004: Error message appears with invalid credentials")
     public void testLoginWithInvalidCredentials() {
         logger.info("🔷 TC004: Starting - Login with invalid credentials");
@@ -72,6 +86,8 @@ public class LoginPageTestCase extends BaseTest {
     }
 
     @Test
+    @Tag("functional")
+    @Tag("critical")
     @DisplayName("TC005: Locked user cannot login")
     public void testLockedUserCannotLogin() {
         logger.info("🔷 TC005: Starting - Locked user login attempt");
@@ -83,6 +99,7 @@ public class LoginPageTestCase extends BaseTest {
     }
 
     @Test
+    @Tag("functional")
     @DisplayName("TC006: Error message appears with empty username")
     public void testLoginWithEmptyUsername() {
         logger.info("🔷 TC006: Starting - Login with empty username");
@@ -102,6 +119,7 @@ public class LoginPageTestCase extends BaseTest {
     }
 
     @Test
+    @Tag("functional")
     @DisplayName("TC007: Error message appears with empty password")
     public void testLoginWithEmptyPassword() {
         logger.info("🔷 TC007: Starting - Login with empty password");
@@ -121,6 +139,7 @@ public class LoginPageTestCase extends BaseTest {
     }
 
     @Test
+    @Tag("functional")
     @DisplayName("TC008: Error message appears with both fields empty")
     public void testLoginWithBothFieldsEmpty() {
         logger.info("🔷 TC008: Starting - Login with both fields empty");
@@ -138,6 +157,7 @@ public class LoginPageTestCase extends BaseTest {
     //==================== FIELD INTERACTION TEST CASES ====================
 
     @Test
+    @Tag("ui")
     @DisplayName("TC009: User can clear username field")
     public void testClearUsernameField() {
         logger.info("🔷 TC009: Starting - Clear username field");
@@ -154,6 +174,7 @@ public class LoginPageTestCase extends BaseTest {
     }
 
     @Test
+    @Tag("ui")
     @DisplayName("TC010: User can clear password field")
     public void testClearPasswordField() {
         logger.info("🔷 TC010: Starting - Clear password field");
@@ -170,6 +191,8 @@ public class LoginPageTestCase extends BaseTest {
     }
 
     @Test
+    @Tag("ui")
+    @Tag("quick")
     @DisplayName("TC011: Username field accepts and retains input")
     public void testUsernameFieldInput() {
         logger.info("🔷 TC011: Starting - Username field input validation");
@@ -182,6 +205,8 @@ public class LoginPageTestCase extends BaseTest {
     }
 
     @Test
+    @Tag("ui")
+    @Tag("quick")
     @DisplayName("TC012: Password field accepts and retains input")
     public void testPasswordFieldInput() {
         logger.info("🔷 TC012: Starting - Password field input validation");
@@ -196,6 +221,7 @@ public class LoginPageTestCase extends BaseTest {
     // ==================== PAGE ELEMENT TEST CASES ====================
 
     @Test
+    @Tag("ui")
     @DisplayName("TC013: Login page title is present and valid")
     public void testLoginPageTitle() {
         logger.info("🔷 TC013: Starting - Login page title validation");
@@ -208,6 +234,7 @@ public class LoginPageTestCase extends BaseTest {
     }
 
     @Test
+    @Tag("ui")
     @DisplayName("TC014: Login page header/logo is visible")
     public void testLoginPageLogoVisibility() {
         logger.info("🔷 TC014: Starting - Login page logo visibility");
@@ -217,6 +244,25 @@ public class LoginPageTestCase extends BaseTest {
         assertFalse(pageTitle.isEmpty(),
                 "Page title/logo should not be empty");
         logger.info("✅ TC014: PASSED - Login page logo is visible");
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "user1, pass1",
+            "user2, pass2",
+            "testuser, testpass"
+    })
+    @Tag("functional")
+    @DisplayName("TC015: Invalid credentials display error (Data-driven)")
+    public void testMultipleInvalidCredentials(String username, String password) {
+        logger.info("🔷 TC015: Testing with username: {}, password: {}", username, password);
+
+        loginPage.loginWithCredentials(username, password);
+
+        assertTrue(loginPage.isErrorMessageDisplayed(),
+                "Error message should be displayed for invalid credentials");
+
+        logger.info("✅ TC015: PASSED - Error displayed for credentials: {}/{}", username, password);
     }
 
 }
